@@ -1,0 +1,17 @@
+{
+	"encode": "utf8",
+	"replace": {
+		"tags": [
+			"meta",
+			"header",
+			"footer",
+			"content"
+		],
+		"active": {
+			"mark": true,
+			"replace": "active"
+		}
+	},
+	"remove": false,
+	"directoryIndex": "index.html"
+}

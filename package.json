@@ -1,0 +1,14 @@
+{
+	"name": "html-template-convertor",
+	"version": "1.0.0",
+	"description": "HTML template converter tool",
+	"type": "module",
+	"main": "bin/convert.js",
+	"scripts": {
+		"convert": "node bin/convert.js"
+	},
+	"dependencies": {
+		"jsdom": "latest",
+		"jsonc-parser": "latest"
+	}
+}

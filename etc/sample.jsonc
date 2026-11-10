@@ -1,0 +1,73 @@
+{
+	"top": {
+		"dir": "!",
+		"uri": "",
+		"partsswap": [
+			"content"
+		],
+		"replace": [
+			{
+				"tag": "css",
+				"type": "raw",
+				"raw": "<link rel='stylesheet' href='/_/css/page.css'>"
+			},
+			{
+				"tag": "script",
+				"type": "raw",
+				"raw": "<script type='module' src='/_/js/page1.js' defer></script>"
+			}
+		]
+	},
+	"page2": {
+		"partsswap": [
+			"header",
+			"content",
+			"footer"
+		],
+		"replace": [
+			{
+				"tag": "css",
+				"type": "dom",
+				"dom": {
+					"tagname": "link",
+					"attribute": {
+						"rel": "stylesheet",
+						"href": "/_/css/page.css"
+					}
+				}
+			},
+			{
+				"tag": "script",
+				"type": "raw",
+				"raw": "<script type='module' src='/_/js/page2.js' defer></script>"
+			}
+		]
+	},
+	"page3": {
+		"dir": "page4",
+		"uri": "page5",
+		"baseswap": true,
+		"partsswap": [
+			"content"
+		],
+		"replace": [
+			{
+				"tag": "css",
+				"type": "raw",
+				"raw": "<link rel='stylesheet' href='/_/css/page.css'>"
+			},
+			{
+				"tag": "script",
+				"type": "dom",
+				"dom": {
+					"tagname": "script",
+					"attribute": {
+						"type": "module",
+						"src": "/_/js/page3.js",
+						"defer": "defer"
+					}
+				}
+			}
+		]
+	}
+}
