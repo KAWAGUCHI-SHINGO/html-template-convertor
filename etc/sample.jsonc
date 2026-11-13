@@ -3,7 +3,11 @@
 		"dir": "!",
 		"uri": "",
 		"partsswap": [
-			"content"
+			"content",
+			"register",
+			"modify",
+			"search",
+			"result"
 		],
 		"replace": [
 			{
@@ -22,7 +26,11 @@
 		"partsswap": [
 			"header",
 			"content",
-			"footer"
+			"footer",
+			"register",
+			"modify",
+			"search",
+			"result"
 		],
 		"replace": [
 			{
@@ -48,7 +56,11 @@
 		"uri": "page5",
 		"baseswap": true,
 		"partsswap": [
-			"content"
+			"content",
+			"register",
+			"modify",
+			"search",
+			"result"
 		],
 		"replace": [
 			{
